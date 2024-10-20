@@ -2,10 +2,10 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { submitForm, resetFormState } from "../../redux/formSlice";
-import { RootState } from "../../redux/store";
+import { RootState, AppDispatch } from "../../redux/store";
 
 const ContactForm: React.FC = () => {
-  const dispatch = useDispatch();
+  const dispatch: AppDispatch = useDispatch();
   const { isLoading, isSubmitted, error } = useSelector((state: RootState) => state.form);
 
   const {
@@ -15,8 +15,6 @@ const ContactForm: React.FC = () => {
   } = useForm();
 
   const onSubmit = (data: any) => {
-
-
     dispatch(submitForm({
       name: data.name,
       email: data.email,
@@ -56,7 +54,7 @@ const ContactForm: React.FC = () => {
             },
           })}
         />
-        {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
+        {errors.name && typeof errors.name.message === 'string' && <p className="text-red-500 text-sm">{errors.name.message}</p>}
 
         {/* Email Input */}
         <label htmlFor="email" className="sr-only">
@@ -75,7 +73,7 @@ const ContactForm: React.FC = () => {
             },
           })}
         />
-        {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
+        {errors.email && typeof errors.email.message === 'string' && <p className="text-red-500 text-sm">{errors.email.message}</p>}
 
         {/* Website Input */}
         <label htmlFor="website" className="sr-only">
@@ -90,7 +88,7 @@ const ContactForm: React.FC = () => {
             required: "Website URL is required",
           })}
         />
-        {errors.website && <p className="text-red-500 text-sm">{errors.website.message}</p>}
+        {errors.website && typeof errors.website.message === 'string' && <p className="text-red-500 text-sm">{errors.website.message}</p>}
 
         {/* Project Details */}
         <label htmlFor="project-details" className="sr-only">
@@ -108,7 +106,7 @@ const ContactForm: React.FC = () => {
             },
           })}
         ></textarea>
-        {errors.projectDetails && (
+        {errors.projectDetails && typeof errors.projectDetails.message === 'string' && (
           <p className="text-red-500 text-sm">{errors.projectDetails.message}</p>
         )}
 

@@ -6,7 +6,7 @@ import OfficeLocation from "./OfficeLocation";
 import Statistics from "./Statistics";
 import ClientLogos from "./ClientLogos";
 import Footer from "./Footer";
-
+import Sidebar from "../../assets/side-image.png";
 const ContactPage: React.FC = () => {
   return (
     <div className="flex overflow-hidden flex-col items-center bg-white">
@@ -18,9 +18,9 @@ const ContactPage: React.FC = () => {
               <div className="flex flex-col grow items-end px-20 pt-40 pb-20 mt-2 w-full bg-orange-100 max-md:px-5 max-md:pt-24 max-md:mt-10 max-md:max-w-full">
                 <img
                   loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e43c313b22c5efc62afd99503a13ac8e30beeadc65d628f285eb4f605ff4ccf?placeholderIfAbsent=true&apiKey=8f6b5fb6960b4b8ea6a283ba30b22d6e"
+                  src={Sidebar} 
                   alt=""
-                  className="object-contain max-w-full aspect-[0.58] w-[378px]"
+                  className="object-contain max-w-full aspect-[0.58] w-[622px]"
                 />
               </div>
             </div>
