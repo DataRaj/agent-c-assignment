@@ -1,10 +1,7 @@
  
 import React from "react";
 import logo from "../../assets/logo.svg";
-import menuButton from "../../assets/menuButton.svg";
 import HeroImage from "../../assets/Hero Image.png";
-import shape_1 from "../../assets/shape_1.svg";
-import shape_2 from "../../assets/shape_2.svg";
 import mouse from "../../assets/mouse.svg";
 import HeroSection from "../../assets/Hero Section.png";
 const Header: React.FC = () => {
@@ -15,6 +12,7 @@ const Header: React.FC = () => {
     >
       <div className="pt-11 max-w-full rounded-none w-[1602px] max-md:pl-5">
         <div className="flex gap-5 max-md:flex-col">
+          <div className=" flex-col"></div>
           <div className="flex flex-col w-[82%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col mt-5 text-7xl font-bold text-center leading-[110px] text-stone-950 max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-[49px]">
               <img
@@ -45,16 +43,13 @@ const Header: React.FC = () => {
                 alt=""
                 className="object-contain self-start mt-96 relative bottom-52 aspect-[0.63] max-md:mt-10"
               />
+
             </div>
+            
           </div>
         </div>
       </div>
-      <img
-        loading="lazy"
-        src={mouse}
-        alt=""
-        className="object-contain mt-9 w-16 aspect-square"
-      />
+
     </header>
   );
 };
