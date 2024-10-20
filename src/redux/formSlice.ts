@@ -1,4 +1,4 @@
-// redux/formSlice.ts
+// formSlice.ts
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 // Define an async action for form submission using createAsyncThunk
@@ -20,6 +20,7 @@ export const submitForm = createAsyncThunk(
 
       return await response.json();
     } catch (error) {
+      // @ts-ignore
       return rejectWithValue(error.message);
     }
   }
@@ -56,11 +57,14 @@ const formSlice = createSlice({
       .addCase(submitForm.rejected, (state, action) => {
         state.isLoading = false;
         state.isSubmitted = false;
+        // @ts-ignore
         state.error = action.payload || "An error occurred";
       });
   },
 });
 
-// Export the reset action and reducer
+// Export the reset action
 export const { resetFormState } = formSlice.actions;
+
+// Export the reducer as the default export
 export default formSlice.reducer;

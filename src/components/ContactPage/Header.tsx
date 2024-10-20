@@ -2,7 +2,7 @@
 import React from "react";
 import logo from "../../assets/logo.svg";
 import HeroImage from "../../assets/Hero Image.png";
-import mouse from "../../assets/mouse.svg";
+// import mouse from "../../assets/mouse.svg";
 import menuButton from "../../assets/menuButton.svg";
 import HeroSection from "../../assets/Hero Section.png";
 const Header: React.FC = () => {
