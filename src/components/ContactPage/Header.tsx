@@ -3,6 +3,7 @@ import React from "react";
 import logo from "../../assets/logo.svg";
 import HeroImage from "../../assets/Hero Image.png";
 import mouse from "../../assets/mouse.svg";
+import menuButton from "../../assets/menuButton.svg";
 import HeroSection from "../../assets/Hero Section.png";
 const Header: React.FC = () => {
   return (
@@ -28,12 +29,13 @@ const Header: React.FC = () => {
           </div>
           <div className="flex flex-col ml-5 max-md:ml-0 max-md:w-full">
             <div className="flex z-10 flex-col max-md:mt-10 max-md:mr-0">
-              <button
-                className="flex flex-col self-end px-3.5 py-5 bg-white border-8 border-white border-solid h-[66px] w-[66px]"
+              <button 
+                className="flex flex-col self-end "
                 aria-label="Menu"
               >
-                <span className="shrink-0 w-full border-solid bg-stone-950 border-[5px] border-stone-950 h-[5px]"></span>
-                <span className="shrink-0 mt-4 w-full border-solid bg-stone-950 border-[5px] border-stone-950 h-[5px]"></span>
+                <img src={menuButton} alt="" />
+                {/* <span className="shrink-0 w-full border-solid bg-stone-950 border-[5px] border-stone-950 h-[5px]"></span>
+                <span className="shrink-0 mt-4 w-full border-solid bg-stone-950 border-[5px] border-stone-950 h-[5px]"></span> */}
               </button>
               <img
                 loading="lazy"
@@ -43,7 +45,6 @@ const Header: React.FC = () => {
                 alt=""
                 className="object-contain self-start mt-96 relative bottom-52 aspect-[0.63] max-md:mt-10"
               />
-
             </div>
             
           </div>
