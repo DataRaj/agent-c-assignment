@@ -13,24 +13,7 @@ Tools and Technologies Used:
     TailwindCSS: Utility-first CSS framework for designing responsive UI quickly.
     Shadcn UI: Component library built on Tailwind for handling UI elements.
     Redux/Redux Toolkit: State management tool for handling form submission and validation logic.
-
-Project Structure
-
-The project is organized into the following key folders:
-
-less
-
-src/
-├── components/
-│   ├── Form.tsx        // Contact form component
-│   ├── InputField.tsx  // Reusable input component with validation
-│   └── SuccessMessage.tsx // Success message component after form submission
-├── features/
-│   └── contactSlice.ts // Redux slice for form state management
-├── pages/
-│   └── ContactUs.tsx   // Main page rendering form and layout
-└── store.ts            // Redux store configuration
-
+    
 Key Decisions
 
     Component Structure: The components are designed to be modular and reusable, making it easier to maintain and scale. I separated the form inputs into a reusable component (InputField.tsx) to ensure consistency across the project.
