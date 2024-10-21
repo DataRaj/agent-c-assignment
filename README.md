@@ -1,11 +1,11 @@
-Contact Us Page Development
+## Contact Us Page Development
 Overview
 
 This project implements a fully functional and responsive Contact Us page based on a Figma design. The page handles form submissions with Redux/Redux Toolkit, validates form inputs, and interacts with a REST API. The project follows clean coding principles with reusable components to ensure scalability and maintainability.
 Live Demo:
 
-Link to deployed project (if any)
-Tools and Technologies Used:
+### Link to deployed project (if any)
+### Tools and Technologies Used:
 
     React: Library for building user interfaces.
     TypeScript: Provides static typing for better code quality and development experience.
@@ -14,7 +14,7 @@ Tools and Technologies Used:
     Shadcn UI: Component library built on Tailwind for handling UI elements.
     Redux/Redux Toolkit: State management tool for handling form submission and validation logic.
     
-Key Decisions
+### Key Decisions
 
     Component Structure: The components are designed to be modular and reusable, making it easier to maintain and scale. I separated the form inputs into a reusable component (InputField.tsx) to ensure consistency across the project.
 
@@ -22,7 +22,7 @@ Key Decisions
 
     Form State Handling: I used Redux Toolkit to manage the state of the form, ensuring that the entire form's state is in one place and can be easily managed and debugged.
 
-Features Implemented
+### Features Implemented
 1. Page Layout and Responsiveness
 
     The layout is pixel-perfect and matches the Figma design.
@@ -30,7 +30,7 @@ Features Implemented
 
 2. Form Fields
 
-The form contains the following fields:
+### The form contains the following fields:
 
     Name: A required text input.
     Email: A required email input (with HTML5 validation).
