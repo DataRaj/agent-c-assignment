@@ -1,34 +1,34 @@
 import React from "react";
-import hands from "../../assets/Hands.png";
-import Logo from "../../assets/Logo.png";
+// import hands from "../../assets/Hands.png";
+import Logo from "../../assets/logo.svg";
 import mailLogo from "../../assets/mail-logo.svg";
-import socialMediaImages from "../../assets/social-media-images.svg";
+import socialMediaImages from "../../assets/Socials.svg";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-[#FDCA09] mt-96">
-      <div className="pt-16 pr-6 flex flex-col gap-5 md:flex-row md:gap-0 md:justify-between relative">
-        <img src={Logo} alt="Company logo" className="w-1/4" />
+    // <footer className="w-full bg-[#FDCA09] mt-96">
+    //   <div className="pt-16 pr-6 flex flex-col gap-5 md:flex-row md:gap-0 md:justify-between relative">
+    //     <img src={Logo} alt="Company logo" className="w-1/4" />
 
-        <h2 className="text-5xl font-bold text-stone-950 md:w-1/3">
-          Grow Your Business. <br /> Build Great Products.
-        </h2>
+    //     <h2 className="text-5xl font-bold text-stone-950 md:w-1/3">
+    //       Grow Your Business. <br /> Build Great Products.
+    //     </h2>
 
-        <div className="relative">
-          <button className="px-14 py-6 bg-stone-950 text-white font-bold mr-32">
-            Book a free call
-          </button>
+    //     <div className="relative">
+    //       <button className="px-14 py-6 bg-stone-950 text-white font-bold mr-32">
+    //         Book a free call
+    //       </button>
 
-        </div>
-        <img
-            src={hands}
-            alt="Hand"
-            className="absolute -bottom-28 right-0 w-72 h-auto "
-          />
-      </div>
+    //     </div>
+    //     <img
+    //         src={""}
+    //         alt="Hand"
+    //         className="absolute -bottom-28 right-0 w-72 h-auto "
+    //       />
+    //   </div>
 
 
-      <div className="bg-stone-950 text-white py-28 px-20 mt-28 md:py-24">
+      <div className="bg-stone-950 text-white py-20 px-20 mt-28 md:py-24">
         <div className=""></div>
         <div className="flex flex-col gap-10 md:flex-row md:justify-between">
           <div>
@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
           <img src={socialMediaImages} alt="Social media icons" className="w-32" />
         </div>
       </div>
-    </footer>
+    // </footer>
   );
 };
 

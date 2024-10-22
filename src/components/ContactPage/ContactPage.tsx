@@ -27,6 +27,7 @@ const ContactPage: React.FC = () => {
             <ContactForm />
           </div>
         </section>
+        <ContactForm />
         <h2 className="mt-40 text-5xl font-bold text-center text-stone-950 max-md:mt-10 max-md:max-w-full">
           Come stop by our office sometime
         </h2>

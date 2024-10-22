@@ -1,10 +1,10 @@
  
 import React from "react";
-import office from "../../assets/office.png";
+import office from "../../assets/The Office.png";
 import directions from "../../assets/direction.svg";
 const OfficeLocation: React.FC = () => {
   return (
-    <div className="flex relative flex-col items-start px-16 pt-44 pb-16 mt-24 max-w-full text-2xl font-medium min-h-[677px] text-stone-950 w-[1528px] max-md:px-5 max-md:pt-24 max-md:mt-10">
+    <div className="flex relative flex-col items-start px-16 pt-44 pb-16 mt-24 max-w-full text-2xl font-medium min-h-[677px] text-stone-950 2xl:w-[1528px] max-md:px-5 max-md:pt-24 max-md:mt-10">
       <img
         loading="lazy"
         src={office}        alt="Office location background"
