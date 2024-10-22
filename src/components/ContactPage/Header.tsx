@@ -57,10 +57,11 @@
 //       </div>
 
 //     </header>
-//   );
+//   );Office Location
 // };
 
 // export default Header;
+
 
 import Logo from "../../assets/logo.svg";
 import Group from "../../assets/menuButton.svg";
@@ -68,6 +69,7 @@ import VuesaxOutlineMouse from "../../assets/mouse.svg";
 import lefhand from "../../assets/btop-hand.svg"
 import midhand from "../../assets/mtop-hand.svg"
 import righthand from "../../assets/rtop-hand.svg"
+import bg from "../../assets/bg.png";
 
 export default function Header({ className = "" }: HeroSectionProps) {
 
