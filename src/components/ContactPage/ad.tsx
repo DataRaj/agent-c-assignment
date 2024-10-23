@@ -1,4 +1,3 @@
-import React from 'react'
 import logo from "../../assets/logo.svg";
 import midhand from "../../assets/mbot-hand.svg";
 import lefhand from "../../assets/lbot-hand.svg";

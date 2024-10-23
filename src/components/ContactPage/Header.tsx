@@ -71,33 +71,40 @@ import midhand from "../../assets/mtop-hand.svg"
 import righthand from "../../assets/rtop-hand.svg"
 import bg from "../../assets/bg.png";
 
-export default function Header({ className = "" }: HeroSectionProps) {
+export default function Header() {
 
   return (
     <div className="flex flex-col justify w-full">
-    <header className="h-[90vh] flex flex-col flex-wrap self-stretch w-full bg-[#FDCA09] relative md:py-8 sm:py-16 ">
-      <nav className="mt-12 flex flex-wrap shrink-0 justify-between  items-center px-24">
-        <img src={Logo} alt="Logo" className="w-34 h-7 flex-shrink-0" />
-        <img src={Group} alt="Group" className="w- h-12 flex-shrink-0" />
-      </nav>
-        {/* <div className="flex flex-col items-center mt-5 text-5xl font-bold text-center leading-[110px] text-stone-950"> */}
-          <div className="flex flex-1 justify-center items-center  text-5xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[100px] px-48 font-bold">
-            We would love to hear from you.
+  <header 
+  className="h-[90vh] flex flex-col flex-wrap self-stretch w-full relative md:py-8 sm:py-16"
+  style={{
+    backgroundImage: `url(${bg})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundColor: '#FDCA09', // Fallback color
+  }}
+>
+        <nav className="mt-12 flex flex-wrap shrink-0 justify-between items-center px-24">
+          <img src={Logo} alt="Logo" className="w-34 h-7 flex-shrink-0" />
+          <img src={Group} alt="Group" className="w- h-12 flex-shrink-0" />
+        </nav>
+        <div className="flex flex-1 justify-center items-center text-5xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[100px] px-48 font-bold">
+          We would love to hear from you.
+        </div>
+        <div className="md:justify-center md:items-center">
+          <div className="absolute bottom-0 right-5 px-20 flex flex-wrap flex-row">
+            <img src={lefhand} alt="left hand" className="w-20 md:w-24 lg:w-28 xl:w-48" />
+            <img src={midhand} alt="middle hand" className="w-20 md:w-24 lg:w-28 xl:w-48" />
+            <img src={righthand} alt="right hand" className="w-20 md:w-24 lg:w-28 xl:w-48" />
           </div>
-          <div className="md:justify-center md:items-center">
-  <div className="absolute bottom-0 right-5 px-20 flex flex-wrap flex-row">
-    <img src={lefhand} alt="left hand" className="w-20 md:w-24 lg:w-28 xl:w-48" />
-    <img src={midhand} alt="middle hand" className="w-20 md:w-24 lg:w-28 xl:w-48" />
-    <img src={righthand} alt="right hand" className="w-20 md:w-24 lg:w-28 xl:w-48" />
-  </div>
-</div>
- {/* </div> */}
-    </header>
-    <div className="flex flex-1 justify-center items-center py-8 ">
-      <img src={VuesaxOutlineMouse} alt="" className=""/>
+        </div>
+      </header>
+      <div className="flex flex-1 justify-center items-center py-8">
+        <img src={VuesaxOutlineMouse} alt="" className="" />
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
 
@@ -144,7 +151,3 @@ export default function Header({ className = "" }: HeroSectionProps) {
 //     </div>
 //   );
 // }
-
-interface HeroSectionProps {
-  className?: string;
-}

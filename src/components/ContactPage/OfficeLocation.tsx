@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import office from "../../assets/Office.png";
 import directions from "../../assets/direction.svg";

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import stripe from "../../assets/stripe.svg";
 import spotify from "../../assets/spotify.svg";
 import airbnb from "../../assets/Airbnb.svg";
@@ -7,7 +7,7 @@ import tesla from "../../assets/tesla.svg";
 import dropbox from "../../assets/dropbox.svg";
 import dhl from "../../assets/dhl.svg";
 import reddit from "../../assets/reddit.svg";
-import separator from "../../assets/Seperators.svg";
+// import separator from "../../assets/Seperators.svg";
 
 const ClientLogos = () => {
   const logos = [

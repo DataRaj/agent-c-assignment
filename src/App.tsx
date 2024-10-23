@@ -7,12 +7,11 @@ import ClientLogos from "./components/ContactPage/ClientLogos";
 import ContactForm from "./components/ContactPage/ContactForm";
 // import Header from "./components/ContactPage/Header";
 // import ContactForm from "./components/ContactPage/ContactForm";
-import ContactPage from "./components/ContactPage/ContactPage";
 import Footer from "./components/ContactPage/Footer";
 import Header from "./components/ContactPage/Header";
 import OfficeLocation from "./components/ContactPage/OfficeLocation";
 import Statistics from "./components/ContactPage/Statistics";
-import Desktop from "./components/Fullpage";
+
 
 function App() {
   return (

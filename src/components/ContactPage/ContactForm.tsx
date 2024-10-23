@@ -1,7 +1,7 @@
 // import React, { useState } from "react";
 // import { useForm } from "react-hook-form";
 // import { useDispatch, useSelector } from "react-redux";
-import { submitForm, resetFormState } from "../../redux/formSlice";
+import { submitForm } from "../../redux/formSlice";
 import { RootState, AppDispatch } from "../../redux/store";
 // import { motion } from "framer-motion";
 import Sidebar from "../../assets/side-image.png";
@@ -19,7 +19,7 @@ import { useDispatch, useSelector } from 'react-redux';
 const ContactForm = () => {
   const [click, setClick] = useState(false);
   const dispatch = useDispatch<AppDispatch>();
-  const { isLoading, isSubmitted, error } = useSelector(
+  const { isLoading, error } = useSelector(
     (state: RootState) => state.form
   );
 
@@ -51,9 +51,9 @@ const ContactForm = () => {
     }
   };
 
-  const handleReset = () => {
-    dispatch(resetFormState());
-  };
+  // const handleReset = () => {
+  //   dispatch(resetFormState());
+  // };
 
   const inputClasses = "w-full p-4 px-4 text-2xl border front-medium border-gray-800 border-2 mt-6";
   const errorClasses = "text-red-500 text-sm mt-1";

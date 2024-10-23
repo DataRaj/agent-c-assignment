@@ -1,6 +1,3 @@
-import shape_1 from "../assets/shape_1.svg";
-import shape_2 from "../assets/shape_3.svg";
-
 export const Hero = () => {
   return (
     <section className="w-full container grid lg:grid-cols-2 place-items-center  md:py-32 gap-10 bg-[rgb(253,202,9)] lg:w-[1728px] h-[881px] ">
